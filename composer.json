@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/worker-cart",
+    "description": "Package worker-cart for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\WorkerCart\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "doctrine/doctrine-bundle": "^2.13",
+        "league/commonmark": "^2.0",
+        "psr/cache": "^3.0",
+        "aws/aws-sdk-php": "^3.332"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^7.0",
+        "vimeo/psalm": "^5.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
